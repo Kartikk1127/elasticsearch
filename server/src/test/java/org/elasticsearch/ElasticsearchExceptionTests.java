@@ -115,7 +115,7 @@ public class ElasticsearchExceptionTests extends ESTestCase {
                 new SearchShardTarget("node_1", new ShardId("foo", "_na_", 2), null)
             );
             SearchPhaseExecutionException ex = new SearchPhaseExecutionException(
-                "search",
+                "search ",
                 "all shards failed",
                 new ShardSearchFailure[] { failure, failure1 }
             );
